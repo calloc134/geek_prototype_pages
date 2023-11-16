@@ -22,5 +22,11 @@ export default defineConfig({
 
   jsxFramework: "react",
 
+  globalCss: {
+    body: {
+      fontFamily: "Noto Sans JP",
+    },
+  },
+
   outdir: "src/lib/styled-system",
 });

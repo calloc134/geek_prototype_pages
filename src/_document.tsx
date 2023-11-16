@@ -5,7 +5,14 @@ import { Camera } from "tabler-icons-react";
 
 const Document = () => {
   return (
-    <>
+    <div
+      className={css({
+        justifyContent: "center",
+        display: "flex",
+        height: "full",
+        width: "full",
+      })}
+    >
       <div
         className={css({
           // display: "flex",
@@ -33,18 +40,23 @@ const Document = () => {
             className={css({
               fontSize: 24,
               color: "gray.1",
-              fontFamily: "Noto Sans JP",
             })}
           >
             もさふぇいす
           </h1>
         </div>
-        <div className={css({ padding: 4, width: "10/12", maxWidth: "full" })}>
+        <div
+          className={css({
+            width: "11/12",
+            margin: "auto",
+            marginTop: "4",
+          })}
+        >
           <Outlet />
         </div>
       </div>
       <TanStackRouterDevtools />
-    </>
+    </div>
   );
 };
 
