@@ -8,23 +8,36 @@ const Document = () => {
     <>
       <div
         className={css({
-          padding: 4,
-          bg: "gray.3",
           display: "flex",
-          alignItems: "center",
-          gap: 4,
+          width: "full",
+          height: "max-content",
         })}
       >
-        <Camera size={32} color={"black"} className={css({})} />
-        <h1
+        <div
           className={css({
-            fontSize: 24,
-            color: "gray.dark.1",
-            fontFamily: "Noto Sans JP",
+            padding: 4,
+            bg: "gray.12",
+            display: "flex",
+            alignItems: "center",
+            gap: 4,
           })}
         >
-          あいろうあ
-        </h1>
+          <Camera
+            size={32}
+            className={css({
+              color: "gray.1",
+            })}
+          />
+          <h1
+            className={css({
+              fontSize: 24,
+              color: "gray.1",
+              fontFamily: "Noto Sans JP",
+            })}
+          >
+            もさふぇいす
+          </h1>
+        </div>
         <Outlet />
       </div>
       <TanStackRouterDevtools />
