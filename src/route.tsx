@@ -1,12 +1,19 @@
-import { RootRoute, Router } from "@tanstack/react-router";
+import { RootRoute, Route, Router } from "@tanstack/react-router";
 import { Document } from "./_document";
+import { Index } from "./pages/index/Index";
 
 const root_route = new RootRoute({
   component: () => <Document />,
 });
 
+const index_route = new Route({
+  getParentRoute: () => root_route,
+  path: "/",
+  component: () => <Index />,
+});
+
 const router = new Router({
-  routeTree: root_route,
+  routeTree: root_route.addChildren([index_route]),
 });
 
 // tanstack routerを型安全に利用するための型定義

@@ -8,7 +8,7 @@ const Document = () => {
     <>
       <div
         className={css({
-          display: "flex",
+          // display: "flex",
           width: "full",
           height: "max-content",
         })}
@@ -20,6 +20,7 @@ const Document = () => {
             display: "flex",
             alignItems: "center",
             gap: 4,
+            borderBottomRadius: "2xl",
           })}
         >
           <Camera
@@ -38,7 +39,9 @@ const Document = () => {
             もさふぇいす
           </h1>
         </div>
-        <Outlet />
+        <div className={css({ padding: 4, width: "10/12", maxWidth: "full" })}>
+          <Outlet />
+        </div>
       </div>
       <TanStackRouterDevtools />
     </>
