@@ -36,8 +36,8 @@ jobs:
 
       # 型チェック
       - name: typecheck
-        run: pnpm turbo typecheck
+        run: pnpm typecheck
 
       # ビルド
       - name: build
-        run: pnpm turbo build
+        run: pnpm build
