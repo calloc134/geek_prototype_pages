@@ -11,6 +11,7 @@ const Document = () => {
         display: "flex",
         height: "full",
         width: "full",
+        minHeight: "full",
         bg: "gray.2",
       })}
     >
