@@ -21,6 +21,7 @@
     "graphql": "^16.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "tabler-icons-react": "^1.56.0",
     "urql": "^4.0.6",
     "vite-tsconfig-paths": "^4.2.1"
   },
