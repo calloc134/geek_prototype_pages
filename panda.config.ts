@@ -22,5 +22,5 @@ export default defineConfig({
 
   jsxFramework: "react",
 
-  outdir: "src/styled-system",
+  outdir: "src/lib/styled-system",
 });
