@@ -1,7 +1,8 @@
 import { RootRoute, Router } from "@tanstack/react-router";
+import { Document } from "./_document";
 
 const root_route = new RootRoute({
-  component: () => <div>Root</div>,
+  component: () => <Document />,
 });
 
 const router = new Router({
