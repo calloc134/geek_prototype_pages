@@ -11,6 +11,7 @@ const Document = () => {
         display: "flex",
         height: "full",
         width: "full",
+        bg: "gray.2",
       })}
     >
       <div
@@ -28,6 +29,7 @@ const Document = () => {
             alignItems: "center",
             gap: 4,
             borderBottomRadius: "2xl",
+            shadow: "lg",
           })}
         >
           <Camera
@@ -48,8 +50,9 @@ const Document = () => {
         <div
           className={css({
             width: "11/12",
+            gap: 4,
             margin: "auto",
-            marginTop: "4",
+            padding: 4,
           })}
         >
           <Outlet />
